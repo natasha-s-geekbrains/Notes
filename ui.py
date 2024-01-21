@@ -19,7 +19,7 @@ def start_menu():
                 "Введите номер выбранной команды и нажмите клавишу Enter: "
             )
         )
-        comand = check_command_num(command)
+        command = check_command_num(command)
         if command == 1:
             add_note()
         elif command == 2:
