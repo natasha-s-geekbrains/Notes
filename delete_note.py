@@ -9,7 +9,7 @@ def delete_note():
     if file_path == None:
         print("Сожалеем, но списка с заметками не существует!\n")
     else:
-         with open("notes_file.txt", "r", encoding="utf-8") as file:
+        with open("notes_file.txt", "r", encoding="utf-8") as file:
             lines_qty = len(file.readlines())
             if lines_qty == 0:
                 print("\nСожалеем, но в списке нет заметок.\n")
