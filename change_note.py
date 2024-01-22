@@ -30,7 +30,7 @@ def change_note():
                     note_text = input(
                         "Введите новый текст заметки и нажмите клавишу Enter: "
                     )
-                    storage_date_time = datetime.datetime.now()
+                    storage_date_time = str(datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S"))
                     note_ID = ID_to_change
 
                     fl = get_file_lines()
