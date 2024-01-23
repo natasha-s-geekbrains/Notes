@@ -10,8 +10,7 @@ def add_note():
     with open("notes_file.txt", "a", encoding="utf-8") as file:
         file.write(f"{note_ID};{note_title};{note_text};{storage_date_time}\n")
 
-    print("Заметка успешно сохранена!")
-    print()
+    print("Заметка успешно сохранена!\n")
 
 
 def get_next_note_ID():
